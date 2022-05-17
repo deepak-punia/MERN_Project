@@ -96,6 +96,6 @@ export const login =
 
 	//Logout action
 
-export const logout =()=>{
+export const logout = () => async (dispatch) =>{
 	dispatch({type: LOGOUT});
 }

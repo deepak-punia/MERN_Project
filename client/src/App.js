@@ -34,7 +34,10 @@ const  App=()=> {
        <Route path="/" element={<Landing />} />
         <Route  path='/register' element={<Register />} />
         <Route  path='/login' element={<Login />} />
-        <PrivateRoute  path='/dashboard' element={<Dashboard />} />
+        <Route
+            path="dashboard"
+            element={<PrivateRoute component={Dashboard} />}
+          />
       </Routes>
       
     </>
